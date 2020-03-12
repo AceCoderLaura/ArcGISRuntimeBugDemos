@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsriBugsWPF"
         xmlns:stickyVisibility="clr-namespace:EsriBugsWPF.Bugs.StickyVisibility"
+        xmlns:annotationDisplay="clr-namespace:EsriBugsWPF.Bugs.AnnotationDisplay"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -13,6 +14,7 @@
                 <CommandBinding Command="Open" Executed="Open_OnExecuted"/>
             </Menu.CommandBindings>
             <MenuItem Header="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
+            <MenuItem Header="Annotation Display Bug" Command="Open" CommandParameter="{x:Type annotationDisplay:AnnotationDisplay}" />
         </Menu>
     </Grid>
 </Window>
