@@ -9,12 +9,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Menu>
-            <Menu.CommandBindings>
-                <CommandBinding Command="Open" Executed="Open_OnExecuted"/>
-            </Menu.CommandBindings>
-            <MenuItem Header="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
-            <MenuItem Header="Annotation Display Bug" Command="Open" CommandParameter="{x:Type annotationDisplay:AnnotationDisplay}" />
-        </Menu>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.CommandBindings>
+            <CommandBinding Command="Open" Executed="Open_OnExecuted" />
+        </Grid.CommandBindings>
+        <Button Grid.Row="0" Content="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
+        <Button Grid.Row="1" Content="Annotation Display Bug" Command="Open" CommandParameter="{x:Type annotationDisplay:AnnotationDisplay}" />
     </Grid>
 </Window>
