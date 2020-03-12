@@ -24,5 +24,13 @@ namespace EsriBugsWPF
         {
             InitializeComponent();
         }
+
+        private void Open_OnExecuted(object sender, ExecutedRoutedEventArgs e)
+        {
+            var pageType = (Type)e.Parameter;
+            var page = (Page)Activator.CreateInstance(pageType);
+            var bugWindow = new Window() { Content = page };
+            bugWindow.Show();
+        }
     }
 }

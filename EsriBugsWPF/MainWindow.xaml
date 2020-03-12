@@ -4,9 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EsriBugsWPF"
+        xmlns:stickyVisibility="clr-namespace:EsriBugsWPF.Bugs.StickyVisibility"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Menu>
+            <Menu.CommandBindings>
+                <CommandBinding Command="Open" Executed="Open_OnExecuted"/>
+            </Menu.CommandBindings>
+            <MenuItem Header="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
+        </Menu>
     </Grid>
 </Window>
