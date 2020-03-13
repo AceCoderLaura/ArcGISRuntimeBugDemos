@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "EsriBugsWPF": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
