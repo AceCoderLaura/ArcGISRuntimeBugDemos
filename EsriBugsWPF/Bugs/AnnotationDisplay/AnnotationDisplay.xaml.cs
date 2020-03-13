@@ -14,14 +14,7 @@ namespace EsriBugsWPF.Bugs.AnnotationDisplay
 
         private void MapOnLoaded(object? sender, EventArgs e)
         {
-            if (Map.LoadError is null)
-            {
-                MessageBox.Show("Bug fixed!");
-            }
-            else
-            {
-                MessageBox.Show(Map.LoadError.ToString());
-            }
+            MessageBox.Show(Map.LoadError is null ? "Bug fixed!" : Map.LoadError.ToString());
         }
     }
 }
