@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsriBugsWPF", "EsriBugsWPF\EsriBugsWPF.csproj", "{7258BB2A-B048-4DFA-A631-2FA063B25DB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Samples", "Esri.Samples\Esri.Samples.csproj", "{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Samples.iOS", "Esri.Samples.iOS\Esri.Samples.iOS.csproj", "{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{7258BB2A-B048-4DFA-A631-2FA063B25DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7258BB2A-B048-4DFA-A631-2FA063B25DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7258BB2A-B048-4DFA-A631-2FA063B25DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 EndGlobal
