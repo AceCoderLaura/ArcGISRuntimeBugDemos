@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace EsriBugsWPF.Tools
+namespace Esri.Bugs.WPF.Tools
 {
     public static class BugDemoCommands
     {

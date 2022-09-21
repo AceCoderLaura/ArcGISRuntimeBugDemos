@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Esri.ArcGISRuntime.Mapping;
 
-namespace EsriBugsWPF.Bugs.StickyVisibility
+namespace Esri.Bugs.WPF.Bugs.StickyVisibility
 {
     public partial class StickyVisibilityPage : Page
     {

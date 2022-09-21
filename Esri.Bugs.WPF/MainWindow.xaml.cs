@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace EsriBugsWPF
+namespace Esri.Bugs.WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

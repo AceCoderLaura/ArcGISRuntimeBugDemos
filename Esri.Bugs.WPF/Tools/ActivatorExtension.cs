@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Windows.Markup;
 
-namespace EsriBugsWPF.Tools
+namespace Esri.Bugs.WPF.Tools
 {
     /// <summary>
     /// This is a <see cref="MarkupExtension" /> that can construct any public class for use in XAML.
