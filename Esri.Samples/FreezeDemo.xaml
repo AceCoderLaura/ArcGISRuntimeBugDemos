@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:samples="clr-namespace:Esri.Samples;assembly=Esri.Samples"
+             x:Class="Esri.Samples.FreezeDemo">
+    
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+  
+    <ContentPage.BindingContext>
+        <samples:FreezeDemoViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout VerticalOptions="Center">
+        <Label Text="1. Ensure normal WiFi connection"/>
+        <Button Text="2. Go to map" Clicked="Button_OnClicked" />
+        <Label Text="3. Set NLC to 100% Loss"/>
+        <Button Text="4. Go to map" Clicked="Button_OnClicked" />
+        <Label Text="5. If the clock below is not frozen, go to step 4"/>
+        <Label Text="{Binding CurrentTime, StringFormat='6. Notice the clock is frozen {0:mm:ss}'}" />
+    </StackLayout>
+
+</ContentPage>
