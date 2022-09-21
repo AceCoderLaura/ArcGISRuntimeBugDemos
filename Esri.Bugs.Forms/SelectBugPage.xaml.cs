@@ -21,9 +21,10 @@ namespace Esri.Bugs.Forms
         {
             try
             {
-                var bug = (BugInfo)e.SelectedItem;
+                if (!(e.SelectedItem is BugInfo bug)) return;
                 var demoPage = (Page)Activator.CreateInstance(bug.DemoPageType);
                 await Navigation.PushAsync(demoPage);
+                BugList.ClearValue(ListView.SelectedItemProperty);
             }
             catch (Exception exception)
             {

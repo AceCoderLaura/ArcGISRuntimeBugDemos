@@ -6,7 +6,7 @@
              x:Class="Esri.Bugs.Forms.SelectBugPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemSelected="ListView_OnItemSelected">
+            <ListView ItemSelected="ListView_OnItemSelected" x:Name="BugList">
                 <ListView.ItemsSource>
                     <forms:BugList />
                 </ListView.ItemsSource>
