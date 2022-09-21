@@ -2,12 +2,12 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net6.0-windows10.0.18362.0</TargetFramework>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Esri.ArcGISRuntime.WPF" Version="100.7.0" />
+      <PackageReference Include="Esri.ArcGISRuntime.WPF" Version="100.15.0" />
     </ItemGroup>
 
 </Project>

@@ -6,20 +6,21 @@
       xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
       xmlns:tools="clr-namespace:EsriBugsWPF.Tools"
       xmlns:system="clr-namespace:System;assembly=System.Runtime"
+      xmlns:mapping="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime"
       mc:Ignorable="d"
       Title="AnnotationDisplay">
     <Grid>
         <esri:MapView>
             <esri:MapView.Map>
-                <esri:Map x:Name="Map">
-                    <esri:Map.OperationalLayers>
-                        <esri:LayerCollection>
-                            <tools:Activator Type="{x:Type esri:AnnotationLayer}">
+                <mapping:Map x:Name="Map">
+                    <mapping:Map.OperationalLayers>
+                        <mapping:LayerCollection>
+                            <tools:Activator Type="{x:Type mapping:AnnotationLayer}">
                                 <system:Uri>https://maps.cern.ch/arcgis/rest/services/General/General/MapServer/45</system:Uri>
                             </tools:Activator>
-                        </esri:LayerCollection>
-                    </esri:Map.OperationalLayers>
-                </esri:Map>
+                        </mapping:LayerCollection>
+                    </mapping:Map.OperationalLayers>
+                </mapping:Map>
             </esri:MapView.Map>
         </esri:MapView>
     </Grid>

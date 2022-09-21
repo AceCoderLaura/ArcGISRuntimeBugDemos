@@ -6,6 +6,7 @@
       xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
       xmlns:system="clr-namespace:System;assembly=System.Runtime"
       xmlns:tools="clr-namespace:EsriBugsWPF.Tools"
+      xmlns:mapping="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime"
       mc:Ignorable="d"
       Title="StickyVisibilityPage">
     <Grid d:DataContext="StickyVisibilityPage">
@@ -27,7 +28,7 @@
 
         <TreeView ItemsSource="{Binding ElementName=StickyMap, Path=OperationalLayers}">
             <TreeView.ItemTemplate>
-                <HierarchicalDataTemplate DataType="{x:Type esri:ILayerContent}" ItemsSource="{Binding SublayerContents}">
+                <HierarchicalDataTemplate DataType="{x:Type mapping:ILayerContent}" ItemsSource="{Binding SublayerContents}">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
@@ -46,19 +47,19 @@
 
         <esri:MapView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
             <esri:MapView.Map>
-                <esri:Map x:Name="StickyMap">
-                    <esri:Map.OperationalLayers>
-                        <esri:GroupLayer Name="Aerials" x:Name="GroupLayer">
-                            <esri:GroupLayer.Layers>
-                                <esri:LayerCollection>
-                                    <tools:Activator Type="{x:Type esri:ArcGISTiledLayer}">
+                <mapping:Map x:Name="StickyMap">
+                    <mapping:Map.OperationalLayers>
+                        <mapping:GroupLayer Name="Aerials" x:Name="GroupLayer">
+                            <mapping:GroupLayer.Layers>
+                                <mapping:LayerCollection>
+                                    <tools:Activator Type="{x:Type mapping:ArcGISTiledLayer}">
                                         <system:Uri>https://gisbasemap.ecan.govt.nz/arcgis/rest/services/Imagery/MapServer</system:Uri>
                                     </tools:Activator>
-                                </esri:LayerCollection>
-                            </esri:GroupLayer.Layers>
-                        </esri:GroupLayer>
-                    </esri:Map.OperationalLayers>
-                </esri:Map>
+                                </mapping:LayerCollection>
+                            </mapping:GroupLayer.Layers>
+                        </mapping:GroupLayer>
+                    </mapping:Map.OperationalLayers>
+                </mapping:Map>
             </esri:MapView.Map>
         </esri:MapView>
     </Grid>
