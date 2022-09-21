@@ -18,7 +18,7 @@
     <StackLayout VerticalOptions="Center">
         <Label Text="1. Ensure normal WiFi connection"/>
         <Button Text="2. Go to map" Clicked="Button_OnClicked" />
-        <Label Text="3. Set NLC to 100% Loss"/>
+        <Label Text="3. Set Network Link Conditioner to 100% Loss"/>
         <Button Text="4. Go to map" Clicked="Button_OnClicked" />
         <Label Text="5. If the clock below is not frozen, go to step 4"/>
         <Label Text="{Binding CurrentTime, StringFormat='6. Notice the clock is frozen {0:mm:ss}'}" />
