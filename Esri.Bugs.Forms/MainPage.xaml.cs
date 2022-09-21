@@ -5,7 +5,7 @@
         public MainPage()
         {
             InitializeComponent();
-            PushAsync(new FreezeDemo());
+            PushAsync(new SelectBugPage());
         }
     }
 }

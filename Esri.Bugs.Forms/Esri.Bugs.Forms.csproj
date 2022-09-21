@@ -14,4 +14,15 @@
         <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
         <PackageReference Include="Esri.ArcGISRuntime.Xamarin.Forms" Version="100.11.2" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Bugs\FreezeOnBack\FreezeDemo.xaml.cs">
+        <DependentUpon>FreezeDemo.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Bugs\FreezeOnBack\FreezeMapPage.xaml.cs">
+        <DependentUpon>FreezeMapPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>
