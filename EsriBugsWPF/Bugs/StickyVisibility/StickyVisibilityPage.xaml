@@ -45,7 +45,7 @@
 
         <Button Grid.Row="0" Grid.Column="2" Content="Toggle Group Layer ON -> OFF -> ON" Command="tools:BugDemoCommands.Step" CommandParameter="1" />
 
-        <esri:MapView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+        <esri:MapView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
             <esri:MapView.Map>
                 <mapping:Map x:Name="StickyMap">
                     <mapping:Map.OperationalLayers>
@@ -62,5 +62,25 @@
                 </mapping:Map>
             </esri:MapView.Map>
         </esri:MapView>
+
+        <FlowDocumentReader Grid.Row="1" Grid.Column="0">
+            <FlowDocument FontSize="12">
+                <List MarkerStyle="Decimal">
+                    <ListItem>
+                        <Paragraph>Use the "Toggle Image Layer" button to toggle the layer visibility</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Notice that the layers are still visible</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Use the "Toggle Group Layer" button to toggle the parent from "on" to "off" and then "on" again</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Notice that the changes to the image layer's visibility have taken a belated effect</Paragraph>
+                    </ListItem>
+                </List>
+            </FlowDocument>
+        </FlowDocumentReader>
+        
     </Grid>
 </Page>
