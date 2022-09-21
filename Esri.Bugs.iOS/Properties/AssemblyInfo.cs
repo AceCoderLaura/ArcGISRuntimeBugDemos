@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Esri.Samples.iOS")]
+[assembly: AssemblyTitle("Esri.Bugs.iOS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CompanyName")]
-[assembly: AssemblyProduct("Esri.Samples.iOS")]
+[assembly: AssemblyProduct("Esri.Bugs.iOS")]
 [assembly: AssemblyCopyright("Copyright © CompanyName Year")]
 [assembly: AssemblyTrademark("CompanyTrademark")]
 [assembly: AssemblyCulture("")]

@@ -4,7 +4,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Esri.Samples.iOS
+namespace Esri.Bugs.iOS
 {
     public class Application
     {

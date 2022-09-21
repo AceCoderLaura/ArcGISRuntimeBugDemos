@@ -7,7 +7,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms.Xaml;
 using Map = Esri.ArcGISRuntime.Mapping.Map;
 
-namespace Esri.Samples
+namespace Esri.Bugs.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FreezeMapPage

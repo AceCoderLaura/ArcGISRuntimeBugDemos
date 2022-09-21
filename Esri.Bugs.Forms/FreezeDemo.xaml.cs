@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Esri.Samples
+namespace Esri.Bugs.Forms
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FreezeDemo : ContentPage

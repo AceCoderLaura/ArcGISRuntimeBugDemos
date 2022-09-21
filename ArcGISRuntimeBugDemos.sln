@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsriBugsWPF", "EsriBugsWPF\EsriBugsWPF.csproj", "{7258BB2A-B048-4DFA-A631-2FA063B25DB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Samples", "Esri.Samples\Esri.Samples.csproj", "{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Bugs.Forms", "Esri.Bugs.Forms\Esri.Bugs.Forms.csproj", "{EEEA8217-568C-4E8A-B21B-2726E39E5EF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Samples.iOS", "Esri.Samples.iOS\Esri.Samples.iOS.csproj", "{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esri.Bugs.iOS", "Esri.Bugs.iOS\Esri.Bugs.iOS.csproj", "{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

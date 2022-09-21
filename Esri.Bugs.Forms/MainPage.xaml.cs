@@ -1,4 +1,4 @@
-﻿namespace Esri.Samples
+﻿namespace Esri.Bugs.Forms
 {
     public partial class MainPage
     {

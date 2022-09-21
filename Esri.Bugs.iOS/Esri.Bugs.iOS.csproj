@@ -8,9 +8,9 @@
         <ProjectGuid>{D0EEB4D5-3679-4D0C-8CD3-4BB615CAC1E8}</ProjectGuid>
         <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         <OutputType>Exe</OutputType>
-        <RootNamespace>Esri.Samples.iOS</RootNamespace>
+        <RootNamespace>Esri.Bugs.iOS</RootNamespace>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-        <AssemblyName>Esri.Samples.iOS</AssemblyName>
+        <AssemblyName>Esri.Bugs.iOS</AssemblyName>
         <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -111,9 +111,9 @@
         <PackageReference Include="Esri.ArcGISRuntime.Xamarin.iOS" Version="100.11.2" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Esri.Samples\Esri.Samples.csproj">
-            <Project>{7F319CDF-C173-4B8B-8937-E754B5020A1C}</Project>
-            <Name>Esri.Samples</Name>
+        <ProjectReference Include="..\Esri.Bugs.Forms\Esri.Bugs.Forms.csproj">
+            <Project>{eeea8217-568c-4e8a-b21b-2726e39e5ef2}</Project>
+            <Name>Esri.Bugs.Forms</Name>
         </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

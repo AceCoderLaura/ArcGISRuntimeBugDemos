@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
-namespace Esri.Samples
+namespace Esri.Bugs.Forms
 {
     public sealed class FreezeDemoViewModel : INotifyPropertyChanged
     {
