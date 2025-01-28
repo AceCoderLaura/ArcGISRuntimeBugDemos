@@ -4,15 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:stickyVisibility="clr-namespace:Esri.Bugs.WPF.Bugs.StickyVisibility"
+        xmlns:siteFeaturesNotRendered="clr-namespace:Esri.Bugs.WPF.Bugs.SiteFeaturesNotRendered"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.CommandBindings>
             <CommandBinding Command="Open" Executed="Open_OnExecuted" />
         </Grid.CommandBindings>
         <Button Grid.Row="0" Content="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
+        <Button Grid.Row="1" Content="Feature Not Rendered Bug" Command="Open" CommandParameter="{x:Type siteFeaturesNotRendered:SiteNotRenderedPage}" />
     </Grid>
 </Window>

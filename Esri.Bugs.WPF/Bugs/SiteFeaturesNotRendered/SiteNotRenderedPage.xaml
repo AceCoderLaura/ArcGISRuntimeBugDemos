@@ -1,0 +1,33 @@
+﻿<Page x:Class="Esri.Bugs.WPF.Bugs.SiteFeaturesNotRendered.SiteNotRenderedPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:esri="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime"
+      xmlns:controls="http://schemas.esri.com/arcgis/runtime/2013"
+      mc:Ignorable="d"
+      Title="SiteNotRenderedPage">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <controls:MapView Grid.Column="1" x:Name="MapView" Grid.RowSpan="2">
+            <controls:MapView.Map>
+                <esri:Map x:Name="Map" />
+            </controls:MapView.Map>
+        </controls:MapView>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0" Width="250" TextWrapping="Wrap" Text="When the map loads, you can press the button to render an un-rendered feature. All features on this layer do not render unless they are queried." />
+        
+        <Button Grid.Row="1" Grid.Column="0" Content="Run Query" Click="ButtonBase_OnClick" />
+
+    </Grid>
+</Page>
