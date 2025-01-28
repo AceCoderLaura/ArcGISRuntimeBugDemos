@@ -25,7 +25,7 @@
             </controls:MapView.Map>
         </controls:MapView>
         
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="When the map loads, you can press the button to render an un-rendered feature." />
+        <TextBlock Grid.Row="0" Grid.Column="0" Width="250" TextWrapping="Wrap" Text="When the map loads, you can press the button to render an un-rendered feature. All features on this layer do not render unless they are queried." />
         
         <Button Grid.Row="1" Grid.Column="0" Content="Run Query" Click="ButtonBase_OnClick" />
 
