@@ -15,7 +15,7 @@
         <Grid.CommandBindings>
             <CommandBinding Command="Open" Executed="Open_OnExecuted" />
         </Grid.CommandBindings>
-        <Button Grid.Row="0" Content="Sticky Visibility Bug" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
+        <Button Grid.Row="0" Content="Sticky Visibility Bug [FIXED]" Command="Open" CommandParameter="{x:Type stickyVisibility:StickyVisibilityPage}" />
         <Button Grid.Row="1" Content="Feature Not Rendered Bug" Command="Open" CommandParameter="{x:Type siteFeaturesNotRendered:SiteNotRenderedPage}" />
     </Grid>
 </Window>
