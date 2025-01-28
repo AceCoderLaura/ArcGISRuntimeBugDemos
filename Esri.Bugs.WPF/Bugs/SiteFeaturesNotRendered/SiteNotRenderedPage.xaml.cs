@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using Esri.ArcGISRuntime.Data;
 using Esri.ArcGISRuntime.Geometry;
 using Esri.ArcGISRuntime.Mapping;
@@ -12,8 +13,6 @@ namespace Esri.Bugs.WPF.Bugs.SiteFeaturesNotRendered;
 
 public partial class SiteNotRenderedPage
 {
-    private const string UserName = "<USERNAME HERE>";
-    private const string Password = "<PASSWORD HERE>";
     private readonly Uri _tokenServiceUri = new("https://www.arcgis.com/sharing/generateToken");
 
     private readonly Uri _siteLayerUri =
@@ -22,7 +21,7 @@ public partial class SiteNotRenderedPage
 
     public SiteNotRenderedPage()
     {
-        AuthenticationManager.Current.ChallengeHandler = new ChallengeHandler(HardCodedCredentialsChallengeHandler);
+        AuthenticationManager.Current.ChallengeHandler = new ChallengeHandler(SimpleLoginBoxChallengeHandler);
 
         InitializeComponent();
         
@@ -32,9 +31,37 @@ public partial class SiteNotRenderedPage
         siteLayer.LoadAsync().ContinueWith(OnLayerLoaded);
     }
 
-    private async Task<Credential> HardCodedCredentialsChallengeHandler(CredentialRequestInfo arg)
+    private async Task<Credential> SimpleLoginBoxChallengeHandler(CredentialRequestInfo arg)
     {
-        return await AccessTokenCredential.CreateAsync(_tokenServiceUri, UserName, Password);
+        string username = null;
+        string password = null;
+        await Dispatcher.InvokeAsync(() =>
+        {
+            var loginBox = new Window { Height = 500, Width = 500 };
+
+            var usernameBox = new TextBox();
+            var passwordBox = new PasswordBox();
+            var loginButton = new Button { Content = "Login" };
+            loginBox.Content = new StackPanel
+            {
+                Children =
+                {
+                    new TextBlock { Text = "Username" },
+                    usernameBox,
+                    new TextBlock { Text = "Password" },
+                    passwordBox,
+                    loginButton
+                }
+            };
+
+            loginButton.Click += (_, _) => loginBox.Close();
+            loginBox.ShowDialog();
+
+            username = usernameBox.Text;
+            password = passwordBox.Password;
+        });
+       
+        return await AccessTokenCredential.CreateAsync(_tokenServiceUri, username, password);
     }
 
     private async void OnLayerLoaded(Task loadTask)
